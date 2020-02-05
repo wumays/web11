@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.34-dev-7, created on 2020-02-05 08:04:19
+  from 'D:\maysphp\xampp\htdocs\web11\templates\theme.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.34-dev-7',
+  'unifunc' => 'content_5e3a68f3b3f926_16875358',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '588cedc3ac9b388eb6db0511dfe47255b9205f6c' => 
+    array (
+      0 => 'D:\\maysphp\\xampp\\htdocs\\web11\\templates\\theme.tpl',
+      1 => 1580886168,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5e3a68f3b3f926_16875358 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,17 +34,20 @@
   <title>Creative - Start Bootstrap Theme</title>
 
   <!-- Font Awesome Icons -->
-  <link href="<{$xoImgUrl}>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
   <!-- Plugin CSS -->
-  <link href="<{$xoImgUrl}>vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
   <!-- Theme CSS - Includes Bootstrap -->
-  <link href="<{$xoImgUrl}>css/creative.min.css" rel="stylesheet">
+  <link href="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+css/creative.min.css" rel="stylesheet">
 
 </head>
 
@@ -48,19 +74,19 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
-          <{if $smarty.session.admin}>
+          <?php if ($_SESSION['admin']) {?>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="user.php">管理員</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="user.php?op=logout">登出</a>
             </li>
-          <{else}>
+          <?php } else { ?>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="user.php">登入</a>
           </li>
 
-          <{/if}>
+          <?php }?>
         </ul>
       </div>
     </div>
@@ -139,8 +165,10 @@
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="<{$xoImgUrl}>img/portfolio/fullsize/1.jpg">
-            <img class="img-fluid" src="<{$xoImgUrl}>img/portfolio/thumbnails/1.jpg" alt="">
+          <a class="portfolio-box" href="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+img/portfolio/fullsize/1.jpg">
+            <img class="img-fluid" src="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+img/portfolio/thumbnails/1.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Category
@@ -152,8 +180,10 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="<{$xoImgUrl}>img/portfolio/fullsize/2.jpg">
-            <img class="img-fluid" src="<{$xoImgUrl}>img/portfolio/thumbnails/2.jpg" alt="">
+          <a class="portfolio-box" href="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+img/portfolio/fullsize/2.jpg">
+            <img class="img-fluid" src="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+img/portfolio/thumbnails/2.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Category
@@ -165,8 +195,10 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="<{$xoImgUrl}>img/portfolio/fullsize/3.jpg">
-            <img class="img-fluid" src="<{$xoImgUrl}>img/portfolio/thumbnails/3.jpg" alt="">
+          <a class="portfolio-box" href="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+img/portfolio/fullsize/3.jpg">
+            <img class="img-fluid" src="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+img/portfolio/thumbnails/3.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Category
@@ -178,8 +210,10 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="<{$xoImgUrl}>img/portfolio/fullsize/4.jpg">
-            <img class="img-fluid" src="<{$xoImgUrl}>img/portfolio/thumbnails/4.jpg" alt="">
+          <a class="portfolio-box" href="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+img/portfolio/fullsize/4.jpg">
+            <img class="img-fluid" src="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+img/portfolio/thumbnails/4.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Category
@@ -191,8 +225,10 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="<{$xoImgUrl}>img/portfolio/fullsize/5.jpg">
-            <img class="img-fluid" src="<{$xoImgUrl}>img/portfolio/thumbnails/5.jpg" alt="">
+          <a class="portfolio-box" href="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+img/portfolio/fullsize/5.jpg">
+            <img class="img-fluid" src="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+img/portfolio/thumbnails/5.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Category
@@ -204,8 +240,10 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="<{$xoImgUrl}>img/portfolio/fullsize/6.jpg">
-            <img class="img-fluid" src="<{$xoImgUrl}>img/portfolio/thumbnails/6.jpg" alt="">
+          <a class="portfolio-box" href="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+img/portfolio/fullsize/6.jpg">
+            <img class="img-fluid" src="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+img/portfolio/thumbnails/6.jpg" alt="">
             <div class="portfolio-box-caption p-3">
               <div class="project-category text-white-50">
                 Category
@@ -260,16 +298,33 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="<{$xoImgUrl}>vendor/jquery/jquery.min.js"></script>
-  <script src="<{$xoImgUrl}>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+vendor/jquery/jquery.min.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+vendor/bootstrap/js/bootstrap.bundle.min.js"><?php echo '</script'; ?>
+>
 
   <!-- Plugin JavaScript -->
-  <script src="<{$xoImgUrl}>vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="<{$xoImgUrl}>vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+vendor/jquery-easing/jquery.easing.min.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+vendor/magnific-popup/jquery.magnific-popup.min.js"><?php echo '</script'; ?>
+>
 
   <!-- Custom scripts for this template -->
-  <script src="<{$xoImgUrl}>js/creative.min.js"></script>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['xoImgUrl']->value;?>
+js/creative.min.js"><?php echo '</script'; ?>
+>
 
 </body>
 
 </html>
+<?php }
+}
